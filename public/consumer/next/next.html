@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEA</title>
+    <script src='https://cdn.socket.io/4.5.4/socket.io.min.js'></script>
+    <style>
+
+      .sub{
+       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+       font-size: 25px;
+       color: rgb(15, 15, 15);
+       border-color: black;
+       text-align: center;
+       margin-top:240px;
+      } 
+      body {
+          background-image: url('7.png');
+      }
+      #btn{
+        margin-top:30px;
+      }
+     </style>
+ </head>
+  <body>
+    <div class="">
+      <button id ="btn" type="button" class="btn btn-success" onclick="a()">NEA BILLING</button>
+    </div>
+    <div class="sub" >
+    <p id="h"></p>
+    <div>
+      <p id="a"></p>
+      <img id="bulb_a" src="bulb_off.png" width="100px" height="50px">
+    </div>
+    
+    <div>
+      <p id="b"></p>
+      <img id="bulb_b" src="bulb_off.png" width="100px" height="50px">
+    </div>
+    
+    <div>
+      <p id="c"></p>
+      <img id="bulb_c" src="bulb_off.png" width="100px" height="50px">
+    </div>
+    <script src="next.js"></script>
+  </div>
+    
+  </body>
+</html>

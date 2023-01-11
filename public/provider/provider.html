@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  /* Full height */
+  height: 100%; 
+  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Images used */
+.img1 { background-image: url("6.png"); }
+.contact-form {
+	position: absolute;
+	top: 70%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 400px;
+	height: 350px;
+	padding: 40px 40px;
+	background: rgba(127, 226, 221, 0.603);
+    border-radius: 10px;
+    
+}
+
+.contact-form p {
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+	color: rgb(46, 45, 45);
+}
+.contact-form input {
+	width: 100%;
+	margin-bottom: 20px;
+}
+.contact-form input[type=email], .contact-form input[type=password] {
+	border: none;
+	border-bottom: 1px solid #fff;
+	background: transparent;
+	outline: none;
+	height: 40px;
+	color: #fff;
+	font-size: 16px;
+}
+.contact-form input[type=submit] {
+	height: 40px;
+	color: rgb(95, 88, 88);
+	font-size: 25px;
+	background: rgb(107, 209, 107);
+	cursor: pointer;
+	border-radius: 10px;
+	border: none;
+	outline: none;
+	margin-top: 15%;
+}
+.contact-form a {
+	color: #fff;
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration: none;
+}
+input[type=checkbox] {
+	width: 20%;
+}
+.contact-form1 input[type=button] {
+	position: absolute;
+	top: -75%;
+	left: 120%;
+	width: 120px;
+	height: 40px;
+	color: rgb(95, 88, 88);
+	font-size: 25px;
+	background: rgba(185, 240, 240, 0.562);
+	cursor: pointer;
+	border-radius: 10px;
+	border: black;
+	outline: black;
+}
+</style>
+</head>
+<body>
+    <div class="contact-form">
+		
+		<form action="">
+			<p>Email</p><input placeholder="Enter Email" type="email">
+			<p>Password:</p><input placeholder="Enter Password" type="password"> <input type="submit" value="LOGIN">
+			<div class="contact-form1">
+				<input type="button" onclick="window.location.href='first.html';"  value="Return">
+		</form>
+	</div>
+</div>
+      
+<div class="bg-image img1"></div>
+
+</body>
+</html>
+

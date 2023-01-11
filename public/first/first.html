@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  /* Full height */
+  height: 105%; 
+  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Images used */
+.img1 { background-image: url("Home.png"); }
+.img2 { background-image: url("About.png"); }
+.img3 { background-image: url("Products.png"); }
+.img4 { background-image: url("Support.png"); }
+
+.contact-form input[type=button] {
+  position: absolute;
+	top: 267%;
+	left: 25%;
+	transform: translate(-50%, -50%);
+	height: 40px;
+	color: rgb(95, 88, 88);
+	font-size: 25px;
+	background: rgb(255, 253, 253);
+	cursor: pointer;
+	border-radius: 10px;
+	border: none;
+	outline: none;
+	margin-top: 15%;
+}
+.contact-form0 input[type=button] {
+  position: absolute;
+	top: 267%;
+	left: 75%;
+	transform: translate(-50%, -50%);
+	height: 55px;
+  width: 200px;
+	color: rgb(95, 88, 88);
+	font-size: 25px;
+	background: rgb(255, 253, 253);
+	cursor: pointer;
+	border-radius: 30px;
+	border: none;
+	outline: none;
+	margin-top: 15%;
+}
+</style>
+</head>
+<body>
+
+<div class="bg-image img1"></div>
+<div class="bg-image img2"></div>
+<div class="bg-image img3">
+  <div class="contact-form">
+  <input type="button" onclick="window.location.href='consumer.html';"  value="CONSUMER">
+    <div class="contact-form0">
+   
+        <input type="button" onclick="window.location.href='provider.html';" value="PROVIDER">
+      
+
+  </div>
+</div>
+</div>
+
+ 
+<div class="bg-image img4"></div>
+
+
+</body>
+</html>
