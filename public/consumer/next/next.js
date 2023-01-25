@@ -4,7 +4,13 @@ var a,b,c;
 function a(){
     location.replace("https://www.neabilling.com/viewonline/");
 }
- 
+socket.on('met', function(data) {
+    
+    document.getElementById('h').innerHTML = data+"units"; 
+    
+    console.log(data);
+    
+});
 socket.on('meter_read', function(data) {
     
     document.getElementById('h').innerHTML = data+"units"; 
