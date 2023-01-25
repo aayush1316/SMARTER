@@ -22,6 +22,10 @@ var i=0;
 var previous=fs.readFileSync("./public/consumer/next/meter.txt", "utf8");
 fs.createReadStream('./public/consumer/next/meter.txt', {start: 0})
 
+io.on('connection', (socket) => {
+  io.emit('met',previous);
+});
+
 parser.on('data',(data)=>{
   
   if(data[0]==='A'){
@@ -34,9 +38,8 @@ parser.on('data',(data)=>{
     io.emit('bulb_3',data);
     i=0;
   }
+
   else{
-  
-  
   var a=Number(data)+Number(previous);
   io.emit('meter_read',a);
   console.log(a);
